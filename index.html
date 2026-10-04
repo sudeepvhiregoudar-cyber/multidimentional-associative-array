@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multidimensional Associative Array – Student Marks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Multidimensional Associative Array – Student Marks</h1>
+  <p class="sub">Enter the name and marks of three students to store and display them.</p>
+
+  <form id="form" class="card" novalidate>
+    <h2>Enter student details</h2>
+
+    <div class="row">
+      <div><label for="name1">Student 1 name</label><input id="name1" type="text" placeholder="e.g. Sudeep" autocomplete="off"></div>
+      <div><label for="marks1">Student 1 marks</label><input id="marks1" type="number" min="0" max="100" placeholder="e.g. 85"></div>
+    </div>
+    <div class="row">
+      <div><label for="name2">Student 2 name</label><input id="name2" type="text" placeholder="e.g. Rahul" autocomplete="off"></div>
+      <div><label for="marks2">Student 2 marks</label><input id="marks2" type="number" min="0" max="100" placeholder="e.g. 90"></div>
+    </div>
+    <div class="row">
+      <div><label for="name3">Student 3 name</label><input id="name3" type="text" placeholder="e.g. Akash" autocomplete="off"></div>
+      <div><label for="marks3">Student 3 marks</label><input id="marks3" type="number" min="0" max="100" placeholder="e.g. 78"></div>
+    </div>
+
+    <p class="error" id="error" role="alert"></p>
+
+    <div class="actions">
+      <button type="submit">Show student details</button>
+      <button type="button" class="ghost" id="clearBtn">Clear</button>
+    </div>
+  </form>
+
+  <section id="result" class="card" hidden>
+    <h2>Student Details</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th class="num">Student Number</th><th>Name</th><th class="num">Marks</th></tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
